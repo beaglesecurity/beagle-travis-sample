@@ -5,7 +5,19 @@ This plugin can be used to trigger beagle penetration testing from Travis-CI
 
 ### Prerequisites
 
-Obtain Application Token and User Token from Beagle Dashboard 
+* Obtain Application Token and User Token from Beagle Dashboard
+* Add the repository variables "USER_TOKEN" and "APPLICATION_TOKEN" to Bitbucket Pipelines.
+
+
+### Generate your User Token From Beagle User Settings:
+  Settings -> Access token -> Generate your new personal access token
+
+![Generate user token](https://beagle-assets.s3.ca-central-1.amazonaws.com/share/usertoken.png)
+
+### Generate your Application Token From Beagle<br></h3>
+  Home -> Applications -> Select your application -> Settings -> Application token
+
+![Get application token](https://beagle-assets.s3.ca-central-1.amazonaws.com/share/apptoken.png)
 
 ## What is Beagle?
 
@@ -15,11 +27,17 @@ Beagle Security is a continuous vulnerability management platform which was born
 
 ## Deployment
 
-Add the following code to script section of your .travis.yml file
+Add generic to the language section of your .travis.yml file
+
+```
+language: generic
+```
+
+Add the snippet to script section of your .travis.yml file
 
 ```
 script:
- curl --silent -L https://git.io/fjXpw | bash -s
+ curl --silent -L https://git.io/fjXpA | bash -s
 ```
 
 ### Creating Environment Variables
