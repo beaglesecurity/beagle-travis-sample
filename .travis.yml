@@ -3,4 +3,4 @@ dist: xenial
 language: generic
 
 script:
- curl --silent -L https://git.io/fjXpw | bash -s
+ curl --silent -L https://git.io/fjXpA | bash -s
