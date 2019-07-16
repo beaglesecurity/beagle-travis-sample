@@ -15,10 +15,16 @@ Beagle Security is a continuous vulnerability management platform which was born
 
 ## Deployment
 
-add the .yml file to project
+Add the following code to script section of your .travis.yml file
+
+```
+script:
+ curl --silent -L https://git.io/fjXpw | bash -s
+```
 
 ### Creating Environment Variables
 In-order to trigger beagle penetration testing you need to create two encrypted variables in Travis environment. 
+
 ##### Follow the steps ->
 1. Login to Travis Dashboard
 2. Select your repo
