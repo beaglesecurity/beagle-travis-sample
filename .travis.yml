@@ -1,0 +1,6 @@
+os: linux
+dist: xenial
+language: generic
+
+script:
+ curl --silent -L https://git.io/fjXpw | bash -s
