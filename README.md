@@ -5,11 +5,11 @@ This plugin can be used to trigger beagle penetration testing from Travis-CI
 
 ### Prerequisites
 
-* Obtain Application Token and User Token from Beagle Dashboard
-* Add the environment variables "USER_TOKEN" and "APPLICATION_TOKEN" to Travis CI.
+* Obtain Application Token and Access Token from Beagle Dashboard
+* Add the environment variables "ACCESS_TOKEN" and "APPLICATION_TOKEN" to Travis CI.
 
 
-### Generate your User Token From Beagle User Settings:
+### Generate your Access Token From Beagle User Settings:
   Settings -> Access token -> Generate your new personal access token
 
 ![Generate user token](https://beagle-assets.s3.ca-central-1.amazonaws.com/share/usertoken.png)
@@ -52,11 +52,10 @@ In-order to trigger beagle penetration testing you need to create two encrypted 
 	![Step 1](/images/1.jpeg)
 5. Navigate to Environment Variables
 6. Add tokens, make sure you use environment variable names as follows:
-	* For user token -> user_token
-	* For application token -> application_token
-	![Step 2](/images/2.jpeg)
+	* For Access token -> ACCESS_TOKEN
+	* For Application token -> APPLICATION_TOKEN
 	* Final View 
-	![Step 3](/images/3.png)
+	![Step 3](/images/2.png)
 7. Also make sure that "Display value in build log" is off
 8. Build the project! 
  
